@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game</title>
+    <script src="script1.js" charset="UTF-8"></script>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>MEMORY GAME</h1>
+    </header>
+    <div class="grid" id="board"></div>
+    <div id="animation">
+      <div class="score">
+        SCORE:<span id="result"></span><br /><br /><br />
+        TIME LEFT
+        <div id="timer"></div>
+      </div>
+    </div>
+    <div class="level">
+      Choose Level <br />
+      <button type="button" onclick="countdown(71);game();">Easy</button><br />
+      <button type="button" onclick="countdown(51);game();">Medium</button
+      ><br />
+      <button type="button" onclick="countdown(41);game();">Hard</button><br />
+    </div>
+  </body>
+</html>
