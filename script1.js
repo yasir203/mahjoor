@@ -1,21 +1,21 @@
 function game(){ 
     const cardArray=[ 
         { name:'1', img:'Oggy.jpg' }, 
-        { name:'1', img:'Oggy.jpg' }, 
+        { name:'1a', img:'Oggy.jpg' }, 
         { name:'2', img:'Shinchan.jpg' }, 
-        { name:'2', img:'Shinchan.jpg' }, 
+        { name:'2a', img:'Shinchan.jpg' }, 
         { name:'3', img:'doramon.jpg'}, 
-        { name:'3', img:'doramon.jpg'},
+        { name:'3a', img:'doramon.jpg'},
         { name:'4', img:'lion.jpg' }, 
-        { name:'4', img:'lion.jpg' }, 
+        { name:'4a', img:'lion.jpg' }, 
         { name:'5', img:'minion.jpg' }, 
-        { name:'5', img:'minion.jpg' },
+        { name:'5a', img:'minion.jpg' },
         { name:'6', img:'jerry.jpg' }, 
-        { name:'6', img:'jerry.jpg' }, 
+        { name:'6a', img:'jerry.jpg' }, 
         { name:'7', img:'tom.jpg' }, 
-        { name:'7', img:'tom.jpg' }, 
+        { name:'7a', img:'tom.jpg' }, 
         { name:'8', img:'tweet.jpg' },
-        { name:'8', img:'tweet.jpg'}]; 
+        { name:'8a', img:'tweet.jpg'}]; 
     cardArray.sort(() => 0.5 - Math.random());
     const grid = document.querySelector('.grid') ;
     const resultDisplay=document.querySelector('#result');
@@ -38,7 +38,7 @@ function checkForMatch(){
     var cards=document.querySelectorAll('img'); 
     const optionOneId=cardsChosenId[0]; 
     const optionTwoId=cardsChosenId[1]; 
-    if(cardsChosen[0]==cardsChosen[1]) { 
+    if(cardsChosen[0]==cardsChosen[1]+'a' || cardsChosen[0]+'a'==cardsChosen[1]) { 
         window.alert("Match Found!"); 
         cards[optionOneId].setAttribute('src','wh.jpg'); 
         cards[optionTwoId].setAttribute('src','wh.jpg'); 
